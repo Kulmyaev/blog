@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Post(models.Model):
     class Status(models.TextChoices):
-        DRAFT = 'DF', 'Published'
+        DRAFT = 'DF', 'Draft'
         PUBLISHED = 'PB', 'Published'
 
     title = models.CharField(max_length=250)
